@@ -11,5 +11,6 @@ for i in range(10):
     number_list.append(number)
 print(number_list)
 ask_to_remove = int(input("enter a number from 1 to 3 to delete\n"))
-number_list.remove(ask_to_remove)
+for i in range(number_list.count(ask_to_remove)):
+    number_list.remove(ask_to_remove)
 print(number_list)
